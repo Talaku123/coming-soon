@@ -1,0 +1,99 @@
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+*
+{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body
+{
+  background-color: #1e1841 !important;
+  color: black;
+ 
+}
+
+.carousel-container
+{
+  display: flex;
+  justify-content: center;
+  margin: 50px auto;
+  position: relative;
+  
+}
+
+span
+{
+  align-items: center;
+  color: yellow;
+  display: flex;
+  font-size: 70px;
+  font-weight: 700;
+  justify-content: center;
+  padding-top: 1cap;
+  
+}
+h1
+{
+  color: snow !important;
+  font-size: 120px !important;
+  font-weight: 900 !important;
+  position: absolute;
+  text-shadow: 0 0 15px #000000;
+  transform: translate(100px, -260px);
+  z-index: 999;
+}
+.slide
+{
+  display: none;
+}
+
+img
+{
+  border-radius: 25px !important;
+  box-shadow: 4px -7px 120px snow;
+  height: 70vh;
+  vertical-align: middle;
+  width: 100% !important;
+}
+
+.img-third
+{
+  width: 1200px !important;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 10s;
+}
+
+
+@media screen and (max-width: 580px) {
+
+  h1
+  {
+    font-size: 65px !important;
+    transform: translate(20px, -270px);
+  }
+  img, .img-third
+  {
+    height: 50vh;
+    width: 480px !important;
+  }
+
+}
+
+@keyframes fade {
+  from
+   {
+    opacity: .6
+  } 
+
+  to
+   {
+    opacity: 4
+  }
+}
+
+
